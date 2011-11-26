@@ -13,6 +13,9 @@
 		115C51EF144F688B00E72439 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115C51EE144F688B00E72439 /* CFNetwork.framework */; };
 		115C51F5144F696000E72439 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115C51F3144F696000E72439 /* MainWindow_iPad.xib */; };
 		115C51F8144F696700E72439 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115C51F6144F696700E72439 /* MainWindow_iPhone.xib */; };
+		1167C2A014815A7000E10F38 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1167C29C14815A7000E10F38 /* libTestFlight.a */; };
+		1167C2A114815A7000E10F38 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1167C29D14815A7000E10F38 /* README.txt */; };
+		1167C2A214815A7000E10F38 /* release_notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1167C29E14815A7000E10F38 /* release_notes.txt */; };
 		11B6660E14814E5D0070654E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B6660D14814E5D0070654E /* QuartzCore.framework */; };
 		11EF771B144F5D0100F143C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11EF771A144F5D0100F143C0 /* UIKit.framework */; };
 		11EF771D144F5D0100F143C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11EF771C144F5D0100F143C0 /* Foundation.framework */; };
@@ -35,6 +38,10 @@
 		115C51EE144F688B00E72439 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		115C51F4144F696000E72439 /* sv */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = sv; path = sv.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
 		115C51F7144F696700E72439 /* sv */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = sv; path = sv.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		1167C29C14815A7000E10F38 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		1167C29D14815A7000E10F38 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		1167C29E14815A7000E10F38 /* release_notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.txt; sourceTree = "<group>"; };
+		1167C29F14815A7000E10F38 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		11B6660D14814E5D0070654E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		11B6660F14814EBC0070654E /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		11EF7716144F5D0100F143C0 /* iOSBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +74,7 @@
 				11EF771F144F5D0100F143C0 /* CoreGraphics.framework in Frameworks */,
 				11EF7721144F5D0100F143C0 /* CoreData.framework in Frameworks */,
 				115C51EA144F66BB00E72439 /* libGoogleAnalytics.a in Frameworks */,
+				1167C2A014815A7000E10F38 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +90,17 @@
 			);
 			name = "Google Analytics";
 			path = "Google Analytics SDK/Library";
+			sourceTree = "<group>";
+		};
+		1167C29B14815A7000E10F38 /* TestFlightSDK */ = {
+			isa = PBXGroup;
+			children = (
+				1167C29C14815A7000E10F38 /* libTestFlight.a */,
+				1167C29D14815A7000E10F38 /* README.txt */,
+				1167C29E14815A7000E10F38 /* release_notes.txt */,
+				1167C29F14815A7000E10F38 /* TestFlight.h */,
+			);
+			path = TestFlightSDK;
 			sourceTree = "<group>";
 		};
 		11EF770B144F5D0100F143C0 = {
@@ -104,6 +123,7 @@
 		11EF7719144F5D0100F143C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1167C29B14815A7000E10F38 /* TestFlightSDK */,
 				11B6660D14814E5D0070654E /* QuartzCore.framework */,
 				115C51EE144F688B00E72439 /* CFNetwork.framework */,
 				115C51E6144F66BB00E72439 /* Google Analytics */,
@@ -216,6 +236,8 @@
 			files = (
 				115C51F5144F696000E72439 /* MainWindow_iPad.xib in Resources */,
 				115C51F8144F696700E72439 /* MainWindow_iPhone.xib in Resources */,
+				1167C2A114815A7000E10F38 /* README.txt in Resources */,
+				1167C2A214815A7000E10F38 /* release_notes.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +342,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Google Analytics SDK/Library\"",
+					"\"$(SRCROOT)/TestFlightSDK\"",
 				);
 				PRODUCT_NAME = iOSBase;
 				WRAPPER_EXTENSION = app;
@@ -336,6 +359,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Google Analytics SDK/Library\"",
+					"\"$(SRCROOT)/TestFlightSDK\"",
 				);
 				PRODUCT_NAME = iOSBase;
 				WRAPPER_EXTENSION = app;

@@ -35,3 +35,5 @@
 
 #import "SynthesizeSingleton.h"
 #import "Common.h"
+
+#import "TestFlight.h"

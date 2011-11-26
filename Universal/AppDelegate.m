@@ -24,6 +24,8 @@
     
     [AJUtils analyticsInit];
     [AJUtils analyticsTrackView:@"/"];
+    
+    [TestFlight takeOff:@"Insert your Team Token here"];
     return YES;
 }
 
