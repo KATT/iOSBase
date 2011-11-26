@@ -11,7 +11,6 @@
 
 @implementation AJUtils
 static const NSInteger kGANDispatchPeriodSec = 10;
-#define kGANDAccountID @"UA-12345-6"
 
 SYNTHESIZE_SINGLETON_FOR_CLASS(AJUtils);
 - (id)init

@@ -34,3 +34,4 @@
 
 
 #import "SynthesizeSingleton.h"
+#import "Common.h"

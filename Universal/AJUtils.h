@@ -8,10 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+#define kGANDAccountID @"UA-12345-6"
 @interface AJUtils : NSObject {
 	
 }
 
+
++ (AJUtils*) sharedAJUtils;
 
 #pragma mark - google analytics
 +(void)analyticsInit;

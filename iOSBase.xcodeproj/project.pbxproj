@@ -36,6 +36,7 @@
 		115C51F4144F696000E72439 /* sv */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = sv; path = sv.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
 		115C51F7144F696700E72439 /* sv */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = sv; path = sv.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
 		11B6660D14814E5D0070654E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		11B6660F14814EBC0070654E /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		11EF7716144F5D0100F143C0 /* iOSBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EF771A144F5D0100F143C0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		11EF771C144F5D0100F143C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -135,6 +136,7 @@
 			children = (
 				11EF7724144F5D0100F143C0 /* Info.plist */,
 				11EF7728144F5D0100F143C0 /* main.m */,
+				11B6660F14814EBC0070654E /* Common.h */,
 				11EF772A144F5D0100F143C0 /* Prefix.pch */,
 				115C51BF144F63DA00E72439 /* SynthesizeSingleton.h */,
 			);
